@@ -1,0 +1,19 @@
+Use stubs when you only care about returning specific values.
+Use mocks when you need to verify interactions (e.g., method calls, arguments).
+
+
+Key Highlights of Advanced Examples:
+
+    Stubs:
+        Used for passive dependencies (PaymentGatewayInterface) that don’t need interaction verification but need predefined behavior.
+        Example: Stubbed the charge method to do nothing for a successful payment.
+
+    Mocks:
+        Used for active dependencies (LoggerInterface) where interactions (like method calls and arguments) need to be verified.
+        Example: Mocked charge to throw an exception for payment failure and log to ensure proper logging.
+
+    Exception Handling:
+        Demonstrates how to handle and test scenarios where a method throws an exception.
+
+    Behavioral Verification:
+        Ensures that dependencies behave correctly and interact with the PaymentProcessor as expected.
