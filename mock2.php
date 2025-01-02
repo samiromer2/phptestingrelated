@@ -49,6 +49,7 @@ class mock2 extends TestCase
         $calculator = new Calculator($loggerMock);
 
         // Assert that the add method returns the correct result
+        //$this->assertSame(6, $calculator->add(3, 3)); this will fail even if the test is asserting all good 
         $this->assertSame(5, $calculator->add(2, 3));
     }
 
